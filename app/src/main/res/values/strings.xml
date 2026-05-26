@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecyclerView and CardView</string>
+    <string name="car_image">Car image</string>
+</resources>
