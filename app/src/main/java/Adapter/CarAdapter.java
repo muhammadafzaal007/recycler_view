@@ -14,14 +14,14 @@ import com.example.recyclerviewandcardview.R;
 
 import java.util.List;
 
-import Models.CarModel;
+import Models.ShoesModel;
 
 public class CarAdapter extends RecyclerView.Adapter<CarAdapter.ViewHolder> {
 
-    private final List<CarModel> carList;
+    private final List<ShoesModel> carList;
     private final Context context;
 
-    public CarAdapter(List<CarModel> carList, Context context) {
+    public CarAdapter(List<ShoesModel> carList, Context context) {
         this.carList = carList;
         this.context = context;
     }
@@ -35,7 +35,7 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        CarModel model = carList.get(position);
+        ShoesModel model = carList.get(position);
         holder.imageView.setImageResource(model.getImages1());
         holder.textView.setText(model.getText());
     }

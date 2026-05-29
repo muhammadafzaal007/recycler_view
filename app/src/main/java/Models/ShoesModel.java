@@ -1,10 +1,10 @@
 package Models;
 
-public class CarModel {
+public class ShoesModel {
     private int images1;
     private String text;
 
-    public CarModel(int images1, String text) {
+    public ShoesModel(int images1, String text) {
         this.images1 = images1;
         this.text = text;
     }

@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 import Adapter.CarAdapter;
-import Models.CarModel;
+import Models.ShoesModel;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,14 +26,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.reView) ;
 
-        ArrayList<CarModel> arrlist = new ArrayList<>();
+        ArrayList<ShoesModel> arrlist = new ArrayList<>();
 
          // Adding items: with your actual drawable names
-        arrlist.add(new CarModel(R.drawable.one, "Air Max Jogger"));
-        arrlist.add(new CarModel(R.drawable.two, "Revolution Jogger"));
-        arrlist.add(new CarModel(R.drawable.three, "Pegasus Runner"));
-        arrlist.add(new CarModel(R.drawable.four, "React Infinity Jogger"));
-        arrlist.add(new CarModel(R.drawable.five, "ZoomX Vaporfly Jogger"));
+        arrlist.add(new ShoesModel(R.drawable.one, "Air Max Jogger"));
+        arrlist.add(new ShoesModel(R.drawable.two, "Revolution Jogger"));
+        arrlist.add(new ShoesModel(R.drawable.three, "Pegasus Runner"));
+        arrlist.add(new ShoesModel(R.drawable.four, "React Infinity Jogger"));
+        arrlist.add(new ShoesModel(R.drawable.five, "ZoomX Vaporfly Jogger"));
 
         CarAdapter adapter = new CarAdapter(arrlist, this);
         recyclerView.setAdapter(adapter);
